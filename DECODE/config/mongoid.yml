@@ -1,0 +1,12 @@
+development:
+  clients:
+    default:
+      database: rabbit_ruby
+      hosts:
+        - localhost:27017
+production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOLAB_URI'] %>
+      options:
+        connnect_timeout: 15
